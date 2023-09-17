@@ -1,0 +1,36 @@
+﻿@model UserModel
+
+<h2>Попълване на данни за нов студент</h2>
+
+<form asp-action="Add" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <p>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" />
+    </p>
+    <p>
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" />
+    </p>
+    <p>
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" />
+    </p>
+    <p>
+        <label asp-for="FacultyNumber"></label>
+        <input asp-for="FacultyNumber" />
+    </p>
+    <p>
+        <label asp-for="BirthDate"></label>
+        <input asp-for="BirthDate" />
+    </p>
+    <p>
+        <input type="submit" value="Запис" />
+    </p>
+</form>
+
+@section Scripts
+{
+    @*<partial name="_ValidationScriptsPartial" />*@
+}

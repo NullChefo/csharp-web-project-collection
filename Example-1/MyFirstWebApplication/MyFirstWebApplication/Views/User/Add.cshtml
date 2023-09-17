@@ -1,0 +1,23 @@
+﻿@model UserModel
+
+<h2>Add new user</h2>
+
+<form method="post" asp-controller="User" asp-action="Add"
+      enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-row">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-row">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-row">
+        <label asp-for="Avatar"></label>
+        <input asp-for="Avatar" class="form-control" />
+    </div>
+    <div class="form-row mt-3">
+        <input type="submit" class="btn btn-info mr-2" value="Add user" />
+    </div>
+</form>

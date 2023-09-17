@@ -1,0 +1,9 @@
+﻿@model UserModel
+
+<p>
+    @if (!string.IsNullOrEmpty(Model.AvatarFilePath))
+    {
+        <img src="~/@Model.AvatarFilePath" class="thumb" alt="" />
+    }
+    @Model.Id - @Model.FirstName @Model.LastName
+</p>
