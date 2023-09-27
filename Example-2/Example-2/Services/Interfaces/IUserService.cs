@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Upr2.Models;
+using ExampleTwo.Models;
+using ExampleTwo.Models;
 
-namespace Upr2.Services
+namespace ExampleTwo.Services
 {
     public interface IUserService
     {

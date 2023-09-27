@@ -30,7 +30,7 @@ namespace MyFirstWebApplication
             services.AddControllersWithViews();
 
             services.AddDbContext<MyDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnectionString")));
 
             services.AddTransient<IUserService, UserService>();
         }

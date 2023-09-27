@@ -1,6 +1,6 @@
 using System;
 
-namespace Upr2.Models
+namespace ExampleTwo.Models
 {
     public class ErrorViewModel
     {

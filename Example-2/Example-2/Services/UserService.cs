@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Upr2.Data;
-using Upr2.Data.Models;
-using Upr2.Models;
+using ExampleTwo.Data;
+using ExampleTwo.Data.Models;
+using ExampleTwo.Models;
+using ExampleTwo.Data;
+using ExampleTwo.Data.Models;
+using ExampleTwo.Models;
 
-namespace Upr2.Services
+namespace ExampleTwo.Services
 {
     public class UserService : IUserService
     {

@@ -1,13 +1,14 @@
 ﻿using System;
+using ExampleTwo.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Upr2.Data.Models;
+using ExampleTwo.Data.Models;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace Upr2.Data
+namespace ExampleTwo.Data
 {
     public partial class MyContext : DbContext
     {

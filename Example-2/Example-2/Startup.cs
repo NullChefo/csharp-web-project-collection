@@ -1,18 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+
+using ExampleTwo.Data;
+using ExampleTwo.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Upr2.Data;
-using Upr2.Services;
 
-namespace Upr2
+namespace ExampleTwo
 {
     public class Startup
     {
@@ -27,7 +24,7 @@ namespace Upr2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MyContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IUserService, UserService>();
 

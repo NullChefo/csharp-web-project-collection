@@ -1,0 +1,17 @@
+---
+version: '3'
+services:
+
+  ## Postgres database
+  postgres-db:
+    image: postgres:15.2-alpine
+    container_name: postgres_example-1
+#    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=example_password
+      - POSTGRES_DB=example_one
+    ports:
+      - '5432:5432'
+  #    volumes:
+  #      - db:/var/lib/postgresql/data

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ExampleTwo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Upr2.Models;
+using ExampleTwo.Models;
 
-namespace Upr2.Controllers
+namespace ExampleTwo.Controllers
 {
     public class HomeController : Controller
     {
